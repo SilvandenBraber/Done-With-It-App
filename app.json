@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "DoneWithIt",
+    "slug": "donewithit",
+    "privacy": "unlisted",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash2.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#fc5c65"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.codewithsil.donewithit",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ed0c0d2d-22cc-48fc-81fd-2b7d879ecd84"
+      },
+      "bugsnag": {
+        "apiKey": "cf4c37bdbaf90d1171a76b4fa2bc8c90"
+      }
+    },
+    "owner": "silvdb",
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "@bugsnag/expo/hooks/post-publish.js",
+          "config": {}
+        }
+      ]
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/ed0c0d2d-22cc-48fc-81fd-2b7d879ecd84"
+    }
+  }
+}
